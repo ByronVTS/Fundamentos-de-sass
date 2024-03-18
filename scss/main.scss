@@ -2,16 +2,23 @@
 $primary-color: #FFEFE7;
 $secondary-color: #FFDAC6;
 $tertiary-color: #BABD8D;
+$quaternion-color:#FA9500;
 $primary-text-color:#7C6A0A;
 $font-stack: 'IBM Plex Sans', sans-serif;
+$paragrph-size: 1.4rem;
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 html{
     // font-size: 62.5%;
 }
 body{
     margin: 0;
     padding: 0;
-    // box-sizing: border-box;
+    box-sizing: border-box;
     background-color: $primary-color;
     font-family: $font-stack;
 }
@@ -38,12 +45,48 @@ nav{
     }
     
 }
-main{
-    background-color: $secondary-color;
+article{
+    color: $primary-text-color;
+    width: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    justify-content: space-between;
+    .impact-section{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 5rem;
+    }
+    h1{
+        font-size: 2.4rem;
+        padding: 0px;
+        margin: 0px;
+    }
+    p{
+        font-size: $paragrph-size;
+    }
+    button{
+        width: 12vw;
+        padding: 20px;
+        background-color: $quaternion-color ;
+        border-style: none;
+        border-radius: 35px;
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .impact-section{
+        width: 50%;
+    }
+    img{
+        width: 25vw;
+        border-radius: 18px;
+    }   
 }
+
 footer{
-    $background: #FA9500;
-    background-color: $background;
+    background-color: $quaternion-color;
     width: 100%;
     height: 250px;
 }
