@@ -39,6 +39,7 @@ article {
   padding-left: 45px;
   padding-right: 45px;
   display: flex;
+  padding-top: 50PX;
   justify-content: space-between;
 }
 article .impact-section {
@@ -71,6 +72,35 @@ article .impact-section {
 article img {
   width: 25vw;
   border-radius: 18px;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  background-color: rebeccapurple;
+  padding: 60px;
+}
+section h2 {
+  color: #7C6A0A;
+  font-size: 1.5rem;
+}
+section .healthcare h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+section .healthcare .product-card {
+  width: 15vw;
+  height: auto;
+  background-color: #FFDAC6;
+  color: #7C6A0A;
+  padding: 20px;
+  border-radius: 8px;
+}
+section .healthcare .product-card img {
+  width: 200px;
+  height: 250px;
+  background-image: cover;
+  border-radius: 8px;
 }
 
 footer {

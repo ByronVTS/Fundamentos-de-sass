@@ -51,6 +51,7 @@ article{
     padding-left: 45px;
     padding-right: 45px;
     display: flex;
+    padding-top: 50PX;
     justify-content: space-between;
     .impact-section{
         display: flex;
@@ -83,6 +84,37 @@ article{
         width: 25vw;
         border-radius: 18px;
     }   
+}
+
+section{
+    width: 100%;
+    height: auto;
+    background-color: rebeccapurple;
+    padding: 60px;
+    h2{
+        color: $primary-text-color;
+        font-size: 1.5rem;
+    }
+    .healthcare{
+        h2{
+            font-weight: 300;
+            padding-bottom: 60px;
+        }
+        .product-card{
+            width: 15vw;
+            height: auto;
+            background-color: $secondary-color;
+            color: $primary-text-color;
+            padding: 20px;
+            border-radius: 8px;
+            img{
+                width: 200px;
+                height: 250px;
+                background-image: cover;
+                border-radius: 8px;
+            }
+        }
+    }
 }
 
 footer{
