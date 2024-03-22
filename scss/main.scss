@@ -7,6 +7,19 @@ $primary-text-color:#7C6A0A;
 $font-stack: 'IBM Plex Sans', sans-serif;
 $paragrph-size: 1.4rem;
 
+@mixin flexCenter($direction, $content, $aling) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $aling;
+}
+@mixin buttonStyle{
+    button{
+        background: none;
+        border-style: none;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,9 +37,8 @@ body{
 }
 nav{
     width: auto;
-    // height: 100px;
-    display: flex;
-    justify-content: space-between;
+    @include flexCenter(row, space-between, center);
+   
     color: $primary-text-color;
     padding: 15px;
     p{
@@ -36,26 +48,19 @@ nav{
     .icons{
         display: flex;
         gap: 15px;
-        button{
-            border: none;
-            border-style: none;
-            // height: auto;
-            background: none;
-        }
+       @include buttonStyle()
     }
     
 }
 article{
-    color: $primary-text-color;
     width: auto;
+    color: $primary-text-color;
+    @include flexCenter(row,space-between,center );
     padding-left: 45px;
     padding-right: 45px;
-    display: flex;
     padding-top: 50PX;
-    justify-content: space-between;
     .impact-section{
-        display: flex;
-        flex-direction: column;
+        @include flexCenter(column,space-evenly ,flex-start );
         gap: 1.5rem;
         padding-top: 5rem;
     }
@@ -67,6 +72,7 @@ article{
     p{
         font-size: $paragrph-size;
     }
+    @include buttonStyle;
     button{
         width: 12vw;
         padding: 20px;
@@ -102,12 +108,10 @@ section{
             padding-bottom: 60px;
         }
         .card-section{
-            display: flex;
             width: auto;
+            @include flexCenter(row,space-evenly,center );
             height: auto;
-            justify-content: center;
             flex-wrap: wrap;
-            align-items: center;
             column-gap: 230px;  
         }
         .product-card{
