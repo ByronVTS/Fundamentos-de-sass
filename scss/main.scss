@@ -214,9 +214,31 @@ section{
         }
     }
 }
-
+.location{
+    color: #e86424 ;
+    h2{
+        font-size: 3em;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    .map{
+        @include flexCenter(row,center ,center);
+        padding-bottom: 50px;
+    }
+    p, h3{
+        font-size: $paragrph-size;
+    }
+}
 footer{
     background-color: $quaternary-color;
     width: 100%;
-    height: 250px;
+    height: auto;
+    color: white;
+    padding: 40px;
+    .social-media{
+        @include flexCenter(row,center ,center );
+        gap: 40px;
+
+    }
+
 }
