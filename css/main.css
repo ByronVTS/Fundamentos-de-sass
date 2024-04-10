@@ -74,6 +74,10 @@ article button {
   color: #FFEFE7;
   font-weight: bold;
   font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+article button:hover {
+  transform: scale(1.1);
 }
 article .impact-section {
   width: 50%;
@@ -145,6 +149,58 @@ section .healthcare .product-card .product-img img, section .furniture .product-
 }
 section .furniture .product-card {
   background-color: #BABD8D;
+}
+
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.about-us .mission-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us .mission-section .earth, .about-us .mission-section .innovation {
+  display: flex;
+  gap: 40px;
+  width: 30vw;
+  color: #e86424;
+}
+.about-us .mission-section .earth img, .about-us .mission-section .innovation img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-images img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
 footer {

@@ -82,6 +82,10 @@ article{
         color: $primary-color;
         font-weight: bold;
         font-size: 1rem;
+        transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
     }
     .impact-section{
         width: 50%;
@@ -155,6 +159,59 @@ section{
             background-color: $tertiary-color;
         }
 
+    }
+}
+
+.about-us{
+    // @extend .healthcare;
+    padding-bottom: 60px;
+    h2{
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+    .mission-section{
+        @include flexCenter(row, space-evenly ,center );
+        .earth{
+            // @include flexCenter(row,space-evenly ,null )
+            display: flex;
+            gap: 40px;
+            width: 30vw;
+            color: #e86424;
+            img{
+                object-fit: contain;
+            }
+            p{
+                text-align: center;
+                font-size: $paragrph-size;
+            }
+        }
+        
+    }
+    .innovation{
+        @extend .earth
+    }
+}
+
+.gallery{
+    h2{
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+    .gallery-images{
+        @include flexCenter(row, space-between,center );
+        img{
+            width: 28vw;
+            height: 45vh;
+            object-fit: cover;
+            object-position: 5px 35%;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.1);
+                transition: transform 0.2s;
+            }
+
+        }
     }
 }
 
